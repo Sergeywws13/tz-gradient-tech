@@ -35,7 +35,6 @@
 | **Фреймворк**    | FastAPI                                 |
 | **База данных**  | PostgreSQL 17+ / asyncpg                |
 | **ORM**          | SQLAlchemy 2.0 (асинхронная)            |
-| **Миграции**     | Alembic (опционально)                    |
 | **Тестирование** | pytest, pytest-asyncio, httpx, aiosqlite |
 | **Контейнеры**   | Docker, Docker Compose                   |
 | **Фронтенд**     | HTML, CSS, JavaScript (без фреймворков)  |
@@ -73,6 +72,7 @@ docker-compose up -d
 ```bash
 docker-compose down
 ```
+
 
 
 
