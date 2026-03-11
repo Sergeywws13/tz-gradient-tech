@@ -73,7 +73,22 @@ docker-compose up -d
 docker-compose down
 ```
 
+## На случай, если необходимо посмотреть данные в такблице
+```bash
+docker-compose exec database psql -U postgres -d postgres # вход в контейнер с бд
 
+-- Посмотреть список всех таблиц
+\dt
+
+-- Показать содержимое таблицы short_urls
+SELECT * FROM short_urls;
+
+-- Показать только короткие ссылки и количество переходов
+SELECT short_url, visits FROM short_urls;
+
+-- Выйти из psql
+\q
+```
 
 
 
