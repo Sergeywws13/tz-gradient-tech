@@ -1,7 +1,7 @@
 # 🔗 URL Shortener — сервис коротких ссылок
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.14+-blue?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/python-3.11+-blue?style=for-the-badge&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/FastAPI-0.115+-green?style=for-the-badge&logo=fastapi" alt="FastAPI">
   <img src="https://img.shields.io/badge/PostgreSQL-15+-blue?style=for-the-badge&logo=postgresql" alt="PostgreSQL">
   <img src="https://img.shields.io/badge/Docker-ready-blue?style=for-the-badge&logo=docker" alt="Docker">
