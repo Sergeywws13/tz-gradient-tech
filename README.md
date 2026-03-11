@@ -47,7 +47,7 @@
 
 - **Git** – [скачать](https://git-scm.com/downloads)
 - **Docker** + **Docker Compose** – [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- **Python 3.14+** (только для локального запуска)
+- **Python 3.11+** (только для локального запуска)
 
 ### 🐳 Запуск одной командой (Docker Compose)
 **Если используете uv (рекомендуется):**
@@ -72,6 +72,7 @@ docker-compose up -d
 ```bash
 docker-compose down
 ```
+
 
 
 
