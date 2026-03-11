@@ -10,6 +10,21 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@database:5432/postgres
+      DB_ECHO: "False"
+      DEBUG: "True"
+    depends_on:
+      database:
+        condition: service_healthy
+    volumes:
+      - ./static:/app/static
+    restart: unless-stopped
+
 
 volumes:
   postgres_data:
