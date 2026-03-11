@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сокращатель ссылок</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Сервис коротких ссылок</h1>
+        
+        <div class="card">
+            <h2>Создать короткую ссылку</h2>
+            <form id="shorten-form">
+                <input type="url" id="long-url" placeholder="Введите длинную ссылку (например, https://example.com)" required>
+                <button type="submit">Сократить</button>
+            </form>
+            <div id="result" class="result" style="display: none;">
+                Короткая ссылка: <a id="short-link" href="#" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Статистика по ссылке</h2>
+            <form id="stats-form">
+                <input type="text" id="stats-short-id" placeholder="Введите короткий идентификатор (например, AbCdEf)" required>
+                <button type="submit">Показать статистику</button>
+            </form>
+            <div id="stats-result" class="result" style="display: none;">
+                <p>Короткая ссылка: <span id="stats-short"></span></p>
+                <p>Количество переходов: <span id="stats-visits"></span></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Простой сервис для сокращения ссылок. API доступно по адресу <code>/docs</code></p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
